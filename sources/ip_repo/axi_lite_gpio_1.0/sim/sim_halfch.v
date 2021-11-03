@@ -83,7 +83,7 @@ module tb_halfch();
 
   initial begin
     $dumpfile("sim.vcd");
-    $dumpvars(0,tb);
+    $dumpvars(0,tb_halfch);
   end
 
   initial begin

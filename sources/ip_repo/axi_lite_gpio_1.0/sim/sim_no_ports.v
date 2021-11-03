@@ -66,7 +66,7 @@ module tb_np();
 
   initial begin
     $dumpfile("sim.vcd");
-    $dumpvars(0,tb);
+    $dumpvars(0,tb_np);
   end
 
   initial begin

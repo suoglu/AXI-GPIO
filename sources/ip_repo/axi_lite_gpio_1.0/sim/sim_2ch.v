@@ -5,7 +5,7 @@
  * ----------------------------------------- *
  * File        : sim_2ch.v                   *
  * Author      : Yigit Suoglu                *
- * Last Edit   : 01/11/2021                  *
+ * Last Edit   : 03/11/2021                  *
  * ----------------------------------------- *
  * Description : Custom AXI Lite GPIO sim    *
  *               with a write and read ch    *
@@ -68,7 +68,7 @@ module tb_2ch();
 
   initial begin
     $dumpfile("sim.vcd");
-    $dumpvars(0,tb);
+    $dumpvars(0,tb_2ch);
   end
 
   initial begin
@@ -139,6 +139,77 @@ module tb_2ch();
         s_axi_wvalid = 0;
       end
     join
+    repeat(2) @(posedge clk); #1;
+    step = "AXI write data first";
+    s_axi_awaddr = uut.GPO_AXI_ADDR_OFFSET;
+    s_axi_wdata = 32'hBEEC0C0;
+    s_axi_araddr = uut.GPI_AXI_ADDR_OFFSET;
+    s_axi_wvalid = 1;
+    @(posedge clk); #1;
+    s_axi_awvalid = 1;
+    @(posedge clk); #1;
+    fork
+      begin
+        while(s_axi_awready == 0) begin
+          @(posedge clk); #1;
+        end
+        s_axi_awvalid = 0;
+      end
+      begin
+        while(s_axi_wready == 0) begin
+          @(posedge clk); #1;
+        end
+        s_axi_wvalid = 0;
+      end
+    join
+    repeat(2) @(posedge clk); #1;
+    step = "AXI write addr first";
+    s_axi_awaddr = uut.GPO_AXI_ADDR_OFFSET;
+    s_axi_wdata = 32'hBEEC0C0;
+    s_axi_araddr = uut.GPI_AXI_ADDR_OFFSET;
+    s_axi_awvalid = 1;
+    @(posedge clk); #1;
+    s_axi_wvalid = 1;
+    @(posedge clk); #1;
+    fork
+      begin
+        while(s_axi_awready == 0) begin
+          @(posedge clk); #1;
+        end
+        s_axi_awvalid = 0;
+      end
+      begin
+        while(s_axi_wready == 0) begin
+          @(posedge clk); #1;
+        end
+        s_axi_wvalid = 0;
+      end
+    join
+    repeat(2) @(posedge clk); #1;
+    step = "AXI write res wait";
+    s_axi_awaddr = uut.GPO_AXI_ADDR_OFFSET;
+    s_axi_wdata = 32'hBEEC0C0;
+    s_axi_araddr = uut.GPI_AXI_ADDR_OFFSET;
+    s_axi_awvalid = 1;
+    s_axi_wvalid = 1;
+    s_axi_bready = 0;
+    @(posedge clk); #1;
+    s_axi_awvalid = 0;
+    s_axi_wvalid = 0;
+    repeat(2) @(posedge clk); #1;
+    s_axi_bready = 1;
+    repeat(2) @(posedge clk); #1;
+    step = "AXI read not ready";
+    s_axi_rready = 0;
+    s_axi_arvalid = 1;
+    @(posedge clk); #1;
+    s_axi_arvalid = 0;
+    @(posedge clk); #1;
+    s_axi_arvalid = 1;
+    @(posedge clk); #1;
+    s_axi_arvalid = 0;
+    repeat(2) @(posedge clk); #1;
+    s_axi_rready = 1;
     repeat(5) @(posedge clk); #1;
     $finish;
   end
