@@ -296,7 +296,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e1c3bc6d</spirit:value>
+            <spirit:value>e38d008c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -353,7 +353,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>bde884f9</spirit:value>
+            <spirit:value>7aa01251</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2544,17 +2544,38 @@
     <xilinx:coreExtensions>
       <xilinx:supportedFamilies>
         <xilinx:family xilinx:lifeCycle="Pre-Production">artix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">artix7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">kintexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">qartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">qkintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">qkintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">qvirtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">zynquplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">kintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">kintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">kintexu</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">spartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">versal</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">virtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">virtexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">virtexuplusHBM</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">aartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">akintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">aspartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">azynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">zynq</xilinx:family>
       </xilinx:supportedFamilies>
       <xilinx:taxonomies>
         <xilinx:taxonomy>/AXI_Peripheral</xilinx:taxonomy>
         <xilinx:taxonomy>/Generic_AXI_Interface</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>AXI4 GPIO</xilinx:displayName>
-      <xilinx:coreRevision>12</xilinx:coreRevision>
+      <xilinx:coreRevision>13</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>user.org:user:axi_lite_gpio:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2021-11-01T21:37:07Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2021-12-06T20:49:55Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.df@38c20381_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-gpio/sources/ip_repo/axi_lite_gpio_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.df@315baef5_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-gpio/sources/ip_repo/axi_lite_gpio_1.0</xilinx:tag>
@@ -2808,13 +2829,20 @@
         <xilinx:tag xilinx:name="ui.data.coregen.df@57bf6ed9_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-gpio/sources/ip_repo/axi_lite_gpio_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.df@396c150_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-gpio/sources/ip_repo/axi_lite_gpio_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.df@6bfe0c16_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-gpio/sources/ip_repo/axi_lite_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@66e179b5_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-gpio/sources/ip_repo/axi_lite_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4ee15451_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-gpio/sources/ip_repo/axi_lite_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@58c96b8b_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-gpio/sources/ip_repo/axi_lite_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@56f004ec_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-gpio/sources/ip_repo/axi_lite_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@64eb48c3_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-gpio/sources/ip_repo/axi_lite_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@20dca5d5_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-gpio/sources/ip_repo/axi_lite_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@73772f63_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-gpio/sources/ip_repo/axi_lite_gpio_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2021.1.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="d89c4c2d"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="c30980da"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0b3459c0"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="9f287dbf"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="967a629d"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="7461e476"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="f1a7f1e9"/>
