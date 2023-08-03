@@ -7,6 +7,7 @@
 3. Test
 4. Utilization
 5. Status Information
+6. License
 
 [![Repo on GitLab](https://img.shields.io/badge/repo-GitLab-6C488A.svg)](https://gitlab.com/suoglu/axi-gpio)
 [![Repo on GitHub](https://img.shields.io/badge/repo-GitHub-3D76C2.svg)](https://github.com/suoglu/AXI-GPIO)
@@ -72,3 +73,7 @@ IP core tested with 16 input and 16 output channels connected to each other. Dat
 **Last Simulation:** 01 November 2021, with [Icarus Verilog](http://iverilog.icarus.com/).
 
 **Last Test:** 01 November 2021, on [Arty A7](https://digilent.com/reference/programmable-logic/arty-a7/start).
+
+## License
+
+CERN Open Hardware Licence Version 2 - Weakly Reciprocal

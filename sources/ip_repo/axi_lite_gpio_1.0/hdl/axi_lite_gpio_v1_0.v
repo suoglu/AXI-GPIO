@@ -6,6 +6,7 @@
  * File        : axi_lite_gpio_v1_0.v        *
  * Author      : Yigit Suoglu                *
  * Last Edit   : 01/11/2021                  *
+ * Licence     : CERN-OHL-W                  *
  * ----------------------------------------- *
  * Description : Simple GPIO module with     *
  *               adjustable channels         *
